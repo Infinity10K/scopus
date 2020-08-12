@@ -1,5 +1,5 @@
 {
-    "apiKey": "YourAPIKey"
+    "apiKey": "YourAPIKey",
 
     "DB_HOST": "example.com",
     "DB_NAME": "database name",
