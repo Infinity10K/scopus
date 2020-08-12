@@ -1,8 +1,8 @@
 {
     "apiKey": "YourAPIKey",
 
-    "DB_HOST": "localhost",
-    "DB_NAME": "scopus",
-    "DB_USER": "postgres",
-    "DB_PASS": "10-xvnpzvmhahah"
+    "DB_HOST": "host",
+    "DB_NAME": "db name",
+    "DB_USER": "username",
+    "DB_PASS": "password"
 }
