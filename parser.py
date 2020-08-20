@@ -208,7 +208,7 @@ with conn:
                                         # add article in db
 
                                         try:
-                                            key_words = split(r'\W+\s', entry['authkeywords'])
+                                            key_words = sub(r'\W+', ' ', entry['authkeywords'])
                                         except:
                                             key_words = []
 
@@ -230,10 +230,10 @@ with conn:
                     
 
                 print(str(progress+1) + ' of ' + str(length) +
-                      ' done (' + str(round((progress+1)/length, 2)) + '%)')
+                      ' done (' + str(round((progress + 1) * 100 / length, 2)) + '%)')
 
                 sum_results += totalResults
-                print('Results:', sum_results, 'Errors:', sum_errors)
+                print('Results:', sum_results, '| Errors:', sum_errors)
 
 
 conn.close()
